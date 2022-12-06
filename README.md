@@ -14,7 +14,9 @@ As shown in the above stack, we upload the any product review data as a CSV/text
 
 
 
-**Flyer Image here:**
+Flyer:
+![flyer1](https://user-images.githubusercontent.com/40022088/206045627-40741113-1b48-416a-a6ea-9e9a398d2b16.png)
+![flyer2](https://user-images.githubusercontent.com/40022088/206045642-9ef544e7-01af-4801-8bbb-432f3a428c20.png)
 
 
 **Bibiliography and Credits:**
