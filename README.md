@@ -8,7 +8,8 @@ Usually, generating marketing insights is a manual process which is done via sen
 
 As shown in the above stack, we upload the any product review data or tweets as a CSV/text file to a S3 bucket. We then use AWS comprehend to analyze the text in the reviews to extract the sentiments of the reviews and the key phrases present in them. We then upload the outputs of Comprehend to a DynamoDB table. Since, Quicksight requires the data to be in a tabular format, we use AWS Athena to query the DynamoDB table. We then use the Athena results for displaying the dashboard using Quicksight. The entire pipeline is built using AWS Lambda which is used for connecting various AWS tools.
 
-
+**Lambda function:**
+Before running the Lambda function, 
 
 **Flyer:**
 ![flyer1](https://user-images.githubusercontent.com/40022088/206045627-40741113-1b48-416a-a6ea-9e9a398d2b16.png)
