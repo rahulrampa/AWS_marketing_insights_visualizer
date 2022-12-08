@@ -21,7 +21,7 @@ Before running the Lambda function, we have a create a role with the following p
 
 **Video Link:**\
 The dashboard isn't fully visible in the video. Please refer to the screenshot below for the final dashboard structure.
-https://drive.google.com/file/d/1hslRXD58ruDWRPImhlfgIlaFD7vcLn-f/view
+[https://drive.google.com/file/d/1hslRXD58ruDWRPImhlfgIlaFD7vcLn-f/view](https://youtu.be/O_NILWiu3eM)
 
 **Dashboard:**
 
