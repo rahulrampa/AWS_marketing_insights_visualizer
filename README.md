@@ -2,20 +2,25 @@
 
 “This project repository is created in partial fulfillment of the requirements for the Big Data Analytics course offered by the Master of Science in Business Analytics program at the Carlson School of Management, University of Minnesota.”
 
-Usually, generating marketing insights is a manual process which is done via sending out surveys and collecting the results. In this project, we are crowdsourcing market insights using Amazon reviews and tweets. The advantages of using AWS over other services is that it is cost-effective and easy to integrate various components of the pipeline.
+Usually, generating marketing insights is a manual process which is done via sending out surveys and collecting the results. In this project, we are crowdsourcing market insights using publicly available data such as Amazon reviews and tweets. The advantages of using AWS over other services is that it is cost-effective and it is very easy to integrate various components of the pipeline.
 
 <img width="461" alt="flowchart" src="https://media.github.umn.edu/user/24686/files/cb6ebcf9-69d5-4ba5-b311-6107ba6908e9">
 
-As shown in the above stack, we upload the any product review data or tweets as a CSV/text file to a S3 bucket. We then use AWS comprehend to analyze the text in the reviews to extract the sentiments of the reviews and the key phrases present in them. We then upload the outputs of Comprehend to a DynamoDB table. Since, Quicksight requires the data to be in a tabular format, we use AWS Athena to query the DynamoDB table. We then use the Athena results for displaying the dashboard using Quicksight. The entire pipeline is built using AWS Lambda which is used for connecting various AWS tools.
+As shown in the above stack, we upload the any product review data or tweets as a CSV/text file to a S3 bucket. We then use AWS comprehend to analyze the text in the reviews to extract the sentiments of the reviews and the key phrases present in them. We then upload the outputs of Comprehend to a DynamoDB table. Since, Quicksight requires the data to be in a tabular format, we use AWS Athena to query the DynamoDB table. We then use the Athena results for displaying the dashboard using Quicksight. The entire pipeline is built using AWS Lambda function.
 
 **Lambda function:**
-Before running the Lambda function, 
+Before running the Lambda function, we have a create a role with the following permissions and assign it to the Lambda function.
+Permissions required:
+<img width="630" alt="image" src="https://user-images.githubusercontent.com/40022088/206337079-d989b6c9-86d2-4602-89f3-d51ac3d69e97.png">
+
 
 **Flyer:**
-![flyer1](https://user-images.githubusercontent.com/40022088/206045627-40741113-1b48-416a-a6ea-9e9a398d2b16.png)
-![flyer2](https://user-images.githubusercontent.com/40022088/206045642-9ef544e7-01af-4801-8bbb-432f3a428c20.png)
+![](https://user-images.githubusercontent.com/40022088/206045627-40741113-1b48-416a-a6ea-9e9a398d2b16.png)
+![](https://user-images.githubusercontent.com/40022088/206045642-9ef544e7-01af-4801-8bbb-432f3a428c20.png)
 
 
+**Video Link:**
+https://drive.google.com/file/d/1hslRXD58ruDWRPImhlfgIlaFD7vcLn-f/view
 
 **Dashboard:**
 
